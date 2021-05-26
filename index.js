@@ -3,7 +3,7 @@ const morgan = require('morgan')
 const cors = require('cors')
 const app = express()
 const PORT = process.env.PORT || 3001
-const baseUrl = 'http://localhost:3001/api/persons/'
+const baseUrl = `/api/persons/`
 
 app.use(cors())
 app.use(express.json())
