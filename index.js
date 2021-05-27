@@ -5,6 +5,7 @@ const app = express()
 const PORT = process.env.PORT || 3001
 const baseUrl = `/api/persons/`
 
+app.use(express.static('build'))
 app.use(cors())
 app.use(express.json())
 
