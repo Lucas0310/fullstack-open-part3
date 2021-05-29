@@ -4,7 +4,7 @@ const morgan = require('morgan')
 const cors = require('cors')
 const app = express()
 const PORT = process.env.PORT
-const baseUrl = `/api/persons/`
+const baseUrl = '/api/persons/'
 const Person = require('./models/person')
 
 const errorHandler = (error, request, response, next) => {
